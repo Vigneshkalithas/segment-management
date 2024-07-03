@@ -1,0 +1,140 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none
+}
+.overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    z-index: 2;
+}
+.drawer.open {
+    width: 30%;
+}
+.saveSegementBtn {
+    background-color: #389fad;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 40px;
+}
+.containerHeader{
+ padding: 0 10px;
+ width: 100%;
+ height: 12%;
+ background-color:#389fad;
+  display: flex;
+  align-items: center;
+}
+.CloseBtn{
+border: none;
+background-color:#389fad;
+color: white;
+font-weight: 600;
+font-size: large;
+display: flex;
+align-items: center;
+}
+.contentContainer{
+padding: 0 15px;
+height: 76%;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
+}
+.fromHead{
+   display: flex;
+   flex-direction: column;  
+}
+.label{
+font-weight: 500;
+padding: 20px 0px;
+}
+.inputBox{
+padding:5px 15px;
+}
+::placeholder {
+ color:#929da0;
+}
+.statusHead {
+ display: flex;
+ justify-content: flex-end;
+ gap: 20px;
+ padding: 20px 0px;
+}
+.statusInSideHead {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  font-weight: 500;
+  font-size: small 
+}
+.dropdownHead{
+display: flex;
+align-items: center;
+gap: 15px;
+  }
+.Dropdown{
+  width: 75%;
+  padding: 8px;
+}
+#addBtn{
+ color:#5bb49d;
+  font-weight: 500;
+  font-size: medium;
+  margin:15px 0px;
+}
+.selected-schemas{
+margin:15px 0px;
+}
+.removeBtn{
+padding: 8px;
+background-color:#f2fbfa;
+border: none;
+border-radius: 2px;
+}
+.footerHead{
+background-color: #f6f6f6;
+width:100%;
+height: 12%;
+padding: 0 10px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.saveBtn{
+  background-color:#41b493;
+  border: none;
+  padding: 10px;
+  color:#ffff;
+  font-weight: 500;
+ font-size: small;
+ border-radius: 3px;
+}
+.cancelBtn {
+    background-color:#ffff;
+    border: none;
+    padding: 10px;
+    color:#df3e73;
+    font-weight: 500;
+    font-size: small;
+    border-radius: 3px;
+}
+
